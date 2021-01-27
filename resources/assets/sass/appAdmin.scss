@@ -1,0 +1,137 @@
+.v-select-group {
+		img{
+		width: 5.5rem !important;
+		border-radius: 100px;
+		height: auto;
+		margin-right: 18px;
+	}
+	.bornOn{
+		display: inline;
+	}
+}
+#sideBarApp{
+	.rotate{
+		transform:rotateZ(90deg);
+	}
+}
+.galleryComponent{
+  .card-body{
+    .galleyPreviewBox{
+      position: absolute;
+      height: 250px;
+      overflow-y: auto;
+      padding: 20px;
+      left: 0px;
+      z-index: 1000;
+      .singleFoto{
+        &:hover{
+          span .fa-times-circle{
+            opacity: 1;
+          }
+        }
+      }
+    }
+    span .fa-times-circle{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      font-size: 20px;
+      color: red;
+      opacity: 0;
+      transition:opacity 200ms;
+      z-index: 1005;
+    }
+    form{
+      height: 300px;
+      .btn{
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        bottom: 10px;
+        pointer-events: none;
+        height: 30px;
+
+      }
+      
+    }
+  }
+}
+.dropbox {
+    outline: 2px dashed grey; /* the dash box */
+    outline-offset: -10px;
+    background: lightcyan;
+    color: dimgray;
+    padding: 10px 10px;
+    min-height: 200px; /* minimum height */
+    position: relative;
+    cursor: pointer;
+  }
+
+  .input-file {
+    opacity: 0; /* invisible but it's there! */
+    width: 100%;
+    left: 0%;
+    height: 300px;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .dropbox:hover {
+    background: lightblue; /* when mouse over to the drop zone, change color */
+  }
+
+  .dropbox p {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 50px 0;
+  }
+  .fa-bell, .fa-sign-out-alt{
+    font-size: 25px;
+  }
+  section.dashboard-counts strong{
+    min-height: 50px;
+  }
+
+  .pannelloEventi{
+    li{
+      button{
+        margin-left: 5px;
+      }
+    }
+  }
+  nav.navbar a.menu-btn{
+    width: auto;
+    height: auto;
+    padding: 0.5rem !important;
+  }
+  .btn-success{
+    background: #33b35a !important;
+    color:#fff !important;
+  }
+  .btn-success p{
+    color:#fff !important;
+  }
+  .navbar-header .menuToggle{
+    display: none;
+  }
+  nav.side-navbar li.active a{
+    background: inherit;
+  }
+  nav.side-navbar li.active>a{
+    background: #33b35a;
+  }
+  @media (max-width: 1199px){
+    .sideActive{
+      left: 0px !important;
+    }
+    .arrow{
+      display: none !important;
+    }
+    .navbar-header .menuToggle{
+      display: block;
+    }
+    .navbar-header .btn-success.opened{
+      margin-left: 70px;
+    }
+
+  }
